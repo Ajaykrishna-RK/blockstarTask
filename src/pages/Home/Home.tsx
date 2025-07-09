@@ -1,3 +1,6 @@
+import { Link } from "react-router-dom";
+import { headerLinks } from "../../common/Common";
+
 function Home() {
   return (
     <div className=" flex flex-col items-center justify-center text-center p-4">
@@ -7,6 +10,15 @@ function Home() {
         Use the links below to explore the About section and play the Head &
         Tail game.
       </p>
+      {headerLinks.slice(1).map((item) => (
+        <Link
+          key={item.id}
+          to={item.link}
+          className="bg-green-600 mt-4 text-white px-4 py-2 rounded hover:bg-green-700 transition"
+        >
+          {item.name}
+        </Link>
+      ))}
     </div>
   );
 }

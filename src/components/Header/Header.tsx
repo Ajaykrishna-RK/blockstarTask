@@ -1,24 +1,9 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
+import { headerLinks } from "../../common/Common";
 
 function Header() {
-  const headerLinks = [
-    {
-      id: 1,
-      name: "Home",
-      link: "/",
-    },
-    {
-      id: 1,
-      name: "About",
-      link: "/about",
-    },
-    {
-      id: 3,
-      name: "Head & Tail",
-      link: "/headtail",
-    },
-  ];
+
   const location = useLocation();
   const [menuOpen, setMenuOpen] = useState<Boolean>(false);
   return (
