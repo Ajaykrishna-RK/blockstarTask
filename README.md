@@ -13,12 +13,13 @@
 ## Installation & Running
 1. Clone the repository
    git clone https://github.com/Ajaykrishna-RK/blockstarTask.git
+
    cd blockstarTask
 
-2. Install dependencies
+3. Install dependencies
    npm install
 
-3. Run the dev server
+4. Run the dev server
    npm run dev
    
 ## Head & Tail Logic
