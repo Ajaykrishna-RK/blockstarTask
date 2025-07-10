@@ -7,6 +7,23 @@
   - React Router DOM
   - Tailwind CSS
 
+## Installation & Running
+1. Clone the repository
+   git clone https://github.com/your-username/block-stars-task.git
+   cd blockstarTask
+
+2. Install dependencies
+   npm install
+
+3. Run the dev server
+   npm run dev
+
+## Head & Tail Logic
+  Implemented a dropdown-based Head & Tail game where: 
+  User selects either H or T and submits the choice.
+  Repeated selections stack vertically in the same column.
+  New character selections start a new column next to the previous one.
+  
 ## Features
   - Responsive navigation header
   - Pages: Home, About, and Head & Tail
@@ -24,11 +41,10 @@
   - Includes buttons to navigate to Home and Head & Tail pages
 
 3. Head & Tail Page
-  - Head & Tail Logic
+  ## Head & Tail Logic
   Implemented a dropdown-based Head & Tail game where: 
   User selects either H or T and submits the choice.
   Repeated selections stack vertically in the same column.
   New character selections start a new column next to the previous one.
   
-## Folder Structure
 
