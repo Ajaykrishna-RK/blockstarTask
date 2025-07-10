@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-import { headerLinks } from "../../common/Common";
 import HeaderLinks from "../../components/HeaderLinks/HeaderLinks";
 
 function Home() {
