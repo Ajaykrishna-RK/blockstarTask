@@ -17,9 +17,11 @@
    cd blockstarTask
 
 3. Install dependencies
+
    npm install
 
-4. Run the dev server
+5. Run the dev server
+   
    npm run dev
    
 ## Head & Tail Logic
