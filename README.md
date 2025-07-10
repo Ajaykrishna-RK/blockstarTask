@@ -6,10 +6,13 @@
   - TypeScript
   - React Router DOM
   - Tailwind CSS
-
+    
+## Live link   
+   https://blockstar-task.vercel.app/
+   
 ## Installation & Running
 1. Clone the repository
-   git clone https://github.com/your-username/block-stars-task.git
+   git clone https://github.com/Ajaykrishna-RK/blockstarTask.git
    cd blockstarTask
 
 2. Install dependencies
@@ -17,7 +20,7 @@
 
 3. Run the dev server
    npm run dev
-
+   
 ## Head & Tail Logic
   Implemented a dropdown-based Head & Tail game where: 
   User selects either H or T and submits the choice.
@@ -46,5 +49,8 @@
   User selects either H or T and submits the choice.
   Repeated selections stack vertically in the same column.
   New character selections start a new column next to the previous one.
+
+## Author
+  Ajay Krishna R K
   
 
