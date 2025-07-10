@@ -1,54 +1,34 @@
-# React + TypeScript + Vite
+# Block Stars Task
+  This is a simple React application built using React + Vite + TypeScript, with routing implemented via React Router DOM and styling   done using Tailwind CSS.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Tech Stack
+  - React (with Vite)
+  - TypeScript
+  - React Router DOM
+  - Tailwind CSS
 
-Currently, two official plugins are available:
+## Features
+  - Responsive navigation header
+  - Pages: Home, About, and Head & Tail
+  - implemented H and T Logic
+  - Component-based design
+  - Dynamic exclusion of navigation links
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Pages Overview
+1. Home Page
+  - Displays a welcome message
+  - Includes buttons to navigate to About and Head & Tail pages
 
-## Expanding the ESLint configuration
+2. About Page
+  - Contains a simple paragraph
+  - Includes buttons to navigate to Home and Head & Tail pages
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+3. Head & Tail Page
+  - Head & Tail Logic
+  Implemented a dropdown-based Head & Tail game where: 
+  User selects either H or T and submits the choice.
+  Repeated selections stack vertically in the same column.
+  New character selections start a new column next to the previous one.
+  
+## Folder Structure
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
